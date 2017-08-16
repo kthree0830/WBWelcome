@@ -48,7 +48,7 @@
                          [UIView animateWithDuration:1.0 animations:^{
                              self.tipLabel.alpha = 1;
                          } completion:^(BOOL finished) {
-                            // [self removeFromSuperview];
+                             [self removeFromSuperview];
                          }];
                      }];
 }
@@ -109,6 +109,7 @@
     UILabel *tipLabel = [[UILabel alloc]init];
     tipLabel.font = [UIFont systemFontOfSize:17];
     tipLabel.text = @"欢迎回来";
+    tipLabel.alpha = 0;
     tipLabel.translatesAutoresizingMaskIntoConstraints = NO;
     
     [self addSubview:backImageView];
